@@ -1,0 +1,42 @@
+{
+  "name": "@superflycss/task-lint",
+  "version": "1.0.0",
+  "description": "Lints built superflycss modules after performing autocorretion",
+  "main": "src/main/js/index.js",
+  "scripts": {
+    "update": "ncu -a && npm i",
+    "clean": "gulp clean",
+    "build": "npm run clean && gulp build:css",
+    "test": "npm run build && gulp test:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superflycss/task-lint.git"
+  },
+  "keywords": [
+    "css",
+    "lint",
+    "stylelint",
+    "gulp",
+    "postcss",
+    "superflycss"
+  ],
+  "author": "Ole Ersoy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/superflycss/task-lint/issues"
+  },
+  "homepage": "https://github.com/superflycss/task-lint#readme",
+  "dependencies": {
+    "@superflycss/pli": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-stylefmt": "^1.1.0",
+    "postcss-reporter": "^4.0.0",
+    "stylelint": "^7.11.0",
+    "stylelint-config-standard": "^16.0.0"
+  },
+  "peerDependencies": {
+    "gulp": "3.x"
+  }
+}
